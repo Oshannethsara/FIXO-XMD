@@ -71,7 +71,7 @@ console.log('fixo xmd connected to whatsapp ✅')
 
 let up = `FIXO XMD connected successful ✅\n\nPREFIX: ${prefix}`;
 
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://pin.it/2A56Tp5SO` }, caption: up })
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://ibb.co/zWxZcLYL` }, caption: up })
 
 }
 })
