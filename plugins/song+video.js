@@ -1,4 +1,6 @@
 const {cmd , commands} = require('../command')
+const fg = require('api-dylux')
+const yts = require('yt-search')
 
 cmd({
     pattern: "song",
@@ -8,3 +10,13 @@ cmd({
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
+if(!q) return reply("please give me url or title")
+    const search = await yts(q)
+    const data = search.video[0]:
+
+
+}catch(e){
+    console.log(e)
+    reply(`${e}`)
+}
+})
