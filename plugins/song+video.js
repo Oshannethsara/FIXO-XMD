@@ -12,7 +12,23 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 if(!q) return reply("please give me url or title")
     const search = await yts(q)
-    const data = search.video[0]:
+    const data = search.video[0];
+    const url = data.url
+
+let desc = `
+    👻 *FIXO XMD SONG DOWNLOADER* 👻
+
+    title: ${data.title}
+    description: ${data.description}
+    time: ${data.timestamp}
+    ago: ${data.ago}
+    views: ${data.views}
+
+    *CREATED BY FIXO XMD*💚
+    `
+await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
+
+
 
 
 }catch(e){
