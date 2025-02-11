@@ -28,7 +28,14 @@ let desc = `
     `
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
 
+//download audio
 
+let down = await fg.yta(url)
+let downloadUrl = down.dl_url
+
+//send audio massage  
+
+await conn.sendMessage(from,{audio: {url:downloadUrl},mimetype:"audio/mpeg"},{quoted:mek})
 
 
 }catch(e){
