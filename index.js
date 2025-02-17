@@ -151,7 +151,7 @@ m.react("💕")
 //============================work-type================================================ 
 if(!isOwner && config.MODE === "privete") return
 if(!isOwner && isGroup && config.MODE === "inbox") return
-if(!isOwner && !isGroup && config.MODE === "groupd") return 
+if(!isOwner && !isGroup && config.MODE === "groups") return 
 //=====================================================================================
 
 
