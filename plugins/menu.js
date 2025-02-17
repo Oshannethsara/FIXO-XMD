@@ -3,7 +3,7 @@ const {cmd , commands} = require('../command')
 
 cmd({
     pattern: "menu",
-    desc: "get command list.",
+    desc: "get cmd list.",
     category: "main",
     filename: __filename
 },
@@ -25,7 +25,7 @@ menu[commands[i].category] += `${config.PREFIX}${commands[i].pattern}\n`;
  }
 }
 
-let madeMenu = `🤗*HEY ${`pushname}*
+let madeMenu = `🤗*HEY ${pushname}*
 > ⚜*DOWNLOAD MENU*⚜
 
 ${menu.download}
